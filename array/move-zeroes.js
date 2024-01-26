@@ -1,21 +1,6 @@
 
 
-// my approach 
-function moveZeroes(array){
-    let lastIndex = array.length-1;
-    for(let i=0;i<array.length;i++){
-         if(array[i]==0 && lastIndex > i){
-            let t = array[lastIndex];
-            array[i] = t;
-            array[lastIndex] = 0;
-            lastIndex-=1;
-         }
-    }
-   return array;
-} //O(n)
-
-
-// GFG Inefficient Approach
+//GFG Inefficient Approach
 
 function swap(i,j, array){
    let t = array[i];
