@@ -8,7 +8,7 @@ function mergeSortedArrays(array1, array2){
     let i = 0;
     let j = 0;
     let mergedArray = [];
-    while(i < array1.length || j<array2.length){
+    while(i < array1.length || j< array2.length){
         
         if(i >= array1.length && j < array2.length ){
             while(j < array2.length){
@@ -26,11 +26,10 @@ function mergeSortedArrays(array1, array2){
             mergedArray.push(array1[i]);
             i++;
         }
-        else if(array1[i]>array2[j]){
+        else{
             mergedArray.push(array2[j]);
             j++;
         }
-        console.log(mergedArray)
     }
   return mergedArray;
 
